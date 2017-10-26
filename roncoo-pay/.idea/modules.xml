@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay.iml" filepath="$PROJECT_DIR$/roncoo-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roncoo-pay-common-config/roncoo-pay-common-config.iml" filepath="$PROJECT_DIR$/../roncoo-pay-common-config/roncoo-pay-common-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roncoo-pay-common-core/roncoo-pay-common-core.iml" filepath="$PROJECT_DIR$/../roncoo-pay-common-core/roncoo-pay-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roncoo-pay-service-message/roncoo-pay-service-message.iml" filepath="$PROJECT_DIR$/../roncoo-pay-service-message/roncoo-pay-service-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../roncoo-pay-service-message-api/roncoo-pay-service-message-api.iml" filepath="$PROJECT_DIR$/../roncoo-pay-service-message-api/roncoo-pay-service-message-api.iml" />
+    </modules>
+  </component>
+</project>
