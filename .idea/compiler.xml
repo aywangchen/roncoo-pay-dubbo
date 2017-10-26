@@ -6,19 +6,53 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="roncoo-pay-app-message" />
+        <module name="roncoo-pay-app-notify" />
+        <module name="roncoo-pay-app-queue" />
         <module name="roncoo-pay-common-config" />
         <module name="roncoo-pay-common-core" />
+        <module name="roncoo-pay-service-account" />
+        <module name="roncoo-pay-service-account-api" />
+        <module name="roncoo-pay-service-accounting" />
+        <module name="roncoo-pay-service-accounting-api" />
         <module name="roncoo-pay-service-message" />
         <module name="roncoo-pay-service-message-api" />
+        <module name="roncoo-pay-service-notify" />
+        <module name="roncoo-pay-service-notify-api" />
+        <module name="roncoo-pay-service-trade" />
+        <module name="roncoo-pay-service-trade-api" />
+        <module name="roncoo-pay-service-user" />
+        <module name="roncoo-pay-service-user-api" />
+        <module name="roncoo-pay-web-boss" />
+        <module name="roncoo-pay-web-gateway" />
+        <module name="roncoo-pay-web-message" />
+        <module name="roncoo-pay-web-sample-shop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="roncoo-pay" target="1.7" />
+      <module name="roncoo-pay-app-message" target="1.7" />
+      <module name="roncoo-pay-app-notify" target="1.7" />
+      <module name="roncoo-pay-app-queue" target="1.7" />
       <module name="roncoo-pay-common-config" target="1.7" />
       <module name="roncoo-pay-common-core" target="1.7" />
       <module name="roncoo-pay-dubbo" target="1.5" />
+      <module name="roncoo-pay-service-account" target="1.7" />
+      <module name="roncoo-pay-service-account-api" target="1.7" />
+      <module name="roncoo-pay-service-accounting" target="1.7" />
+      <module name="roncoo-pay-service-accounting-api" target="1.7" />
       <module name="roncoo-pay-service-message" target="1.7" />
       <module name="roncoo-pay-service-message-api" target="1.7" />
+      <module name="roncoo-pay-service-notify" target="1.7" />
+      <module name="roncoo-pay-service-notify-api" target="1.7" />
+      <module name="roncoo-pay-service-trade" target="1.7" />
+      <module name="roncoo-pay-service-trade-api" target="1.7" />
+      <module name="roncoo-pay-service-user" target="1.7" />
+      <module name="roncoo-pay-service-user-api" target="1.7" />
+      <module name="roncoo-pay-web-boss" target="1.7" />
+      <module name="roncoo-pay-web-gateway" target="1.7" />
+      <module name="roncoo-pay-web-message" target="1.7" />
+      <module name="roncoo-pay-web-sample-shop" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

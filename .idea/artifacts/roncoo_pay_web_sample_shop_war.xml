@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="roncoo-pay-web-sample-shop:war">
+    <output-path>$PROJECT_DIR$/roncoo-pay-web-sample-shop/target</output-path>
+    <root id="archive" name="roncoo-pay-web-sample-shop.war">
+      <element id="artifact" artifact-name="roncoo-pay-web-sample-shop:war exploded" />
+    </root>
+  </artifact>
+</component>

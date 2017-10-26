@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-boss" />
+    <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-gateway" />
+    <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-message" />
+    <file type="web" url="file://$PROJECT_DIR$/roncoo-pay-web-sample-shop" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -9,6 +15,23 @@
         <option value="$PROJECT_DIR$/roncoo-pay-common-core/pom.xml" />
         <option value="$PROJECT_DIR$/roncoo-pay-service-message/pom.xml" />
         <option value="$PROJECT_DIR$/roncoo-pay-service-message-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-app-message/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-app-notify/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-app-queue/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-account/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-account-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-accounting/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-accounting-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-notify/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-notify-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-trade/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-trade-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-user/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-service-user-api/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-web-boss/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-web-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-web-message/pom.xml" />
+        <option value="$PROJECT_DIR$/roncoo-pay-web-sample-shop/pom.xml" />
       </list>
     </option>
   </component>

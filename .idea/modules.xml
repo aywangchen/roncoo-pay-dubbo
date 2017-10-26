@@ -3,11 +3,28 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay/roncoo-pay.iml" filepath="$PROJECT_DIR$/roncoo-pay/roncoo-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-app-message/roncoo-pay-app-message.iml" filepath="$PROJECT_DIR$/roncoo-pay-app-message/roncoo-pay-app-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-app-notify/roncoo-pay-app-notify.iml" filepath="$PROJECT_DIR$/roncoo-pay-app-notify/roncoo-pay-app-notify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-app-queue/roncoo-pay-app-queue.iml" filepath="$PROJECT_DIR$/roncoo-pay-app-queue/roncoo-pay-app-queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-common-config/roncoo-pay-common-config.iml" filepath="$PROJECT_DIR$/roncoo-pay-common-config/roncoo-pay-common-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-common-core/roncoo-pay-common-core.iml" filepath="$PROJECT_DIR$/roncoo-pay-common-core/roncoo-pay-common-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-dubbo.iml" filepath="$PROJECT_DIR$/roncoo-pay-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-account/roncoo-pay-service-account.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-account/roncoo-pay-service-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-account-api/roncoo-pay-service-account-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-account-api/roncoo-pay-service-account-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-accounting/roncoo-pay-service-accounting.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-accounting/roncoo-pay-service-accounting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-accounting-api/roncoo-pay-service-accounting-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-accounting-api/roncoo-pay-service-accounting-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-message/roncoo-pay-service-message.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-message/roncoo-pay-service-message.iml" />
       <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-message-api/roncoo-pay-service-message-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-message-api/roncoo-pay-service-message-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-notify/roncoo-pay-service-notify.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-notify/roncoo-pay-service-notify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-notify-api/roncoo-pay-service-notify-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-notify-api/roncoo-pay-service-notify-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-trade/roncoo-pay-service-trade.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-trade/roncoo-pay-service-trade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-trade-api/roncoo-pay-service-trade-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-trade-api/roncoo-pay-service-trade-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-user/roncoo-pay-service-user.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-user/roncoo-pay-service-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-service-user-api/roncoo-pay-service-user-api.iml" filepath="$PROJECT_DIR$/roncoo-pay-service-user-api/roncoo-pay-service-user-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-web-boss/roncoo-pay-web-boss.iml" filepath="$PROJECT_DIR$/roncoo-pay-web-boss/roncoo-pay-web-boss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-web-gateway/roncoo-pay-web-gateway.iml" filepath="$PROJECT_DIR$/roncoo-pay-web-gateway/roncoo-pay-web-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-web-message/roncoo-pay-web-message.iml" filepath="$PROJECT_DIR$/roncoo-pay-web-message/roncoo-pay-web-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/roncoo-pay-web-sample-shop/roncoo-pay-web-sample-shop.iml" filepath="$PROJECT_DIR$/roncoo-pay-web-sample-shop/roncoo-pay-web-sample-shop.iml" />
     </modules>
   </component>
 </project>

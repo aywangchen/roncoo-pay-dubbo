@@ -52,6 +52,10 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 	@Autowired
 	private JmsTemplate notifyJmsTemplate;
 
+	/**
+	 * 预存储消息.
+	 */
+	@Override
 	public int saveMessageWaitingConfirm(RpTransactionMessage message) {
 		
 		if (message == null) {
@@ -68,8 +72,11 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		message.setMessageSendTimes(0);
 		return rpTransactionMessageDao.insert(message);
 	}
-	
-	
+
+	/**
+	 * 确认并发送消息.
+	 */
+	@Override
 	public void confirmAndSendMessage(String messageId) {
 		final RpTransactionMessage message = getMessageByMessageId(messageId);
 		if (message == null) {
@@ -82,13 +89,18 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		
 		notifyJmsTemplate.setDefaultDestinationName(message.getConsumerQueue());
 		notifyJmsTemplate.send(new MessageCreator() {
+			@Override
 			public Message createMessage(Session session) throws JMSException {
 				return session.createTextMessage(message.getMessageBody());
 			}
 		});
 	}
-	
 
+
+	/**
+	 * 存储并发送消息.
+	 */
+	@Override
 	public int saveAndSendMessage(final RpTransactionMessage message) {
 
 		if (message == null) {
@@ -107,6 +119,7 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 
 		notifyJmsTemplate.setDefaultDestinationName(message.getConsumerQueue());
 		notifyJmsTemplate.send(new MessageCreator() {
+			@Override
 			public Message createMessage(Session session) throws JMSException {
 				return session.createTextMessage(message.getMessageBody());
 			}
@@ -115,7 +128,10 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		return result;
 	}
 
-
+	/**
+	 * 直接发送消息.
+	 */
+	@Override
 	public void directSendMessage(final RpTransactionMessage message) {
 
 		if (message == null) {
@@ -133,8 +149,11 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 			}
 		});
 	}
-	
-	
+
+	/**
+	 * 重发消息.
+	 */
+	@Override
 	public void reSendMessage(final RpTransactionMessage message) {
 
 		if (message == null) {
@@ -156,8 +175,11 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 			}
 		});
 	}
-	
 
+	/**
+	 * 根据messageId重发某条消息.
+	 */
+	@Override
 	public void reSendMessageByMessageId(String messageId) {
 		final RpTransactionMessage message = getMessageByMessageId(messageId);
 		if (message == null) {
@@ -180,8 +202,11 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 			}
 		});
 	}
-	
-	
+
+	/**
+	 * 将消息标记为死亡消息.
+	 */
+	@Override
 	public void setMessageToAreadlyDead(String messageId) {
 		RpTransactionMessage message = getMessageByMessageId(messageId);
 		if (message == null) {
@@ -193,7 +218,10 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		rpTransactionMessageDao.update(message);
 	}
 
-
+	/**
+	 * 根据消息ID获取消息
+	 */
+	@Override
 	public RpTransactionMessage getMessageByMessageId(String messageId) {
 
 		Map<String, Object> paramMap = new HashMap<String, Object>();
@@ -208,8 +236,11 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 		paramMap.put("messageId", messageId);
 		rpTransactionMessageDao.delete(paramMap);
 	}
-	
-	
+
+	/**
+	 * 重发某个消息队列中的全部已死亡的消息.
+	 */
+	@Override
 	@SuppressWarnings("unchecked")
 	public void reSendAllDeadMessageByQueueName(String queueName, int batchSize) {
 		log.info("==>reSendAllDeadMessageByQueueName");
@@ -283,6 +314,10 @@ public class RpTransactionMessageServiceImpl implements RpTransactionMessageServ
 	}
 
 
+	/**
+	 * 获取分页数据
+	 */
+	@Override
 	@SuppressWarnings("unchecked")
 	public PageBean<RpTransactionMessage> listPage(PageParam pageParam, Map<String, Object> paramMap){
 		return rpTransactionMessageDao.listPage(pageParam, paramMap);

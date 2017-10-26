@@ -2,9 +2,26 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/roncoo-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-app-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-app-notify" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-app-queue" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/roncoo-pay-common-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/roncoo-pay-common-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-account" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-account-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-accounting" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-accounting-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/roncoo-pay-service-message" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/roncoo-pay-service-message-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-notify" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-notify-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-trade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-trade-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-service-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-web-boss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-web-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-web-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/roncoo-pay-web-sample-shop" charset="UTF-8" />
   </component>
 </project>
