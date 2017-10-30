@@ -38,7 +38,7 @@ public class AccountingMessageListener implements SessionAwareMessageListener<Me
 	@Autowired
 	private RpTransactionMessageService rpTransactionMessageService;
 
-
+	@Override
 	public synchronized void onMessage(Message message, Session session) {
 
 		RpAccountingVoucher param = null;

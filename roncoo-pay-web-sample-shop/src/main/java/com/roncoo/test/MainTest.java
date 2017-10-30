@@ -60,7 +60,7 @@ public class MainTest {
 		for (int i = 0; i < 100; i++) { //每条线程生成数
 			try {
 				int random = RandomUtils.nextInt(10);
-				long sleepNum  = 10l * random;
+				long sleepNum  = 10L * random;
 				Thread.sleep(sleepNum);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
