@@ -30,8 +30,8 @@
 			<list>
 				<value>classpath:jdbc.properties</value>
 				<value>classpath:public_system.properties</value>
-				<value>classpath:alipay_config.properties</value>
-				<value>classpath:weixinpay_config.properties</value>
+				<!--<value>classpath:alipay_config.properties</value>
+				<value>classpath:weixinpay_config.properties</value>-->
 			</list>
 		</property>
 	</bean>
