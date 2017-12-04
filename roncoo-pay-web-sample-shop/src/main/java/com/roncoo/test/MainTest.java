@@ -27,10 +27,10 @@ public class MainTest {
 		
 		List<MerchantKey> listMerchantKey = new ArrayList<MerchantKey>();//添加商户key
 		listMerchantKey.add(new MerchantKey("4c52295065654407b42797cda80dd07d", "6606353e0dab4f7b9a723f2d3e3276b7"));//商户1 roncoo
-		listMerchantKey.add(new MerchantKey("abcf900288114d5fa7fde764966eb2ff", "d94d7c2d56eb4b06828cf746c8be17e6"));//商户2 Along
-		listMerchantKey.add(new MerchantKey("8ba459f55ff04f39b0128a3cb4a48f2b", "3e2ca2eb1f024570b241d65eb4832c37"));//商户3 wusc
-		listMerchantKey.add(new MerchantKey("93d1ea2f9f3b448994f39d6efc7746ef", "fad7ea79810c4af7a973c091aa7c6143"));//商户4 leslie
-		listMerchantKey.add(new MerchantKey("ca6577dff6d647ac882dfb405ceda21e", "1b8da6c9b7544856955fcff6bf920f84"));//商户5 hpt
+		//listMerchantKey.add(new MerchantKey("abcf900288114d5fa7fde764966eb2ff", "d94d7c2d56eb4b06828cf746c8be17e6"));//商户2 Along
+		//listMerchantKey.add(new MerchantKey("8ba459f55ff04f39b0128a3cb4a48f2b", "3e2ca2eb1f024570b241d65eb4832c37"));//商户3 wusc
+		//listMerchantKey.add(new MerchantKey("93d1ea2f9f3b448994f39d6efc7746ef", "fad7ea79810c4af7a973c091aa7c6143"));//商户4 leslie
+		//listMerchantKey.add(new MerchantKey("ca6577dff6d647ac882dfb405ceda21e", "1b8da6c9b7544856955fcff6bf920f84"));//商户5 hpt
 		
 		//listMerchantKey.add(new MerchantKey("4c52295065654407b42797cda80dd07d", "6606353e0dab4f7b9a723f2d3e3276b7"));//商户1 roncoo
 		//listMerchantKey.add(new MerchantKey("abcf900288114d5fa7fde764966eb2ff", "d94d7c2d56eb4b06828cf746c8be17e6"));//商户2 Along
@@ -57,7 +57,7 @@ public class MainTest {
 	private static void testGateWayPay( String payKey , String paySecret){
 				
 		long threadID = Thread.currentThread().getId();
-		for (int i = 0; i < 100; i++) { //每条线程生成数
+		for (int i = 0; i < 2; i++) { //每条线程生成数
 			try {
 				int random = RandomUtils.nextInt(10);
 				long sleepNum  = 10L * random;
@@ -86,7 +86,7 @@ public class MainTest {
 			
 			//模拟构建银行扣款成功结果通知
 			Map<String , Object> notifyMap = getNotifyRequestMap(merchantOrderNo);
-			String notifyResultStr = SimpleHttpUtils.httpGet("http://192.168.1.162:8082/roncoo-pay-web-gateway/scanPayNotify/notify/TEST_PAY_HTTP_CLIENT", notifyMap);
+			String notifyResultStr = SimpleHttpUtils.httpGet("http://192.168.0.24:8080/roncoo-pay-web-gateway/scanPayNotify/notify/TEST_PAY_HTTP_CLIENT", notifyMap);
 			System.out.println(notifyResultStr);
 		}
 	}
